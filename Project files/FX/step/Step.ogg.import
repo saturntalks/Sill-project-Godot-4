@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://uv1yqdwg6a26"
+path="res://.godot/imported/Step.ogg-5bf7342669a804496a04693d5d2185fe.oggvorbisstr"
+
+[deps]
+
+source_file="res://Project files/FX/step/Step.ogg"
+dest_files=["res://.godot/imported/Step.ogg-5bf7342669a804496a04693d5d2185fe.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d0u45c8q26rs7"
+path="res://.godot/imported/slow 2.mp3-7e25c0827ee66080cd4f5455d71c9904.mp3str"
+
+[deps]
+
+source_file="res://Project files/FX/step/slow 2.mp3"
+dest_files=["res://.godot/imported/slow 2.mp3-7e25c0827ee66080cd4f5455d71c9904.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

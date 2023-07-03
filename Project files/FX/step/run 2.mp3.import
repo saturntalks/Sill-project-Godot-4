@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d1o1g6wa6igm8"
+path="res://.godot/imported/run 2.mp3-4469742cdb1c7d9101807c092c3d7c83.mp3str"
+
+[deps]
+
+source_file="res://Project files/FX/step/run 2.mp3"
+dest_files=["res://.godot/imported/run 2.mp3-4469742cdb1c7d9101807c092c3d7c83.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

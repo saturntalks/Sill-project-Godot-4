@@ -1,0 +1,66 @@
+[gd_scene load_steps=11 format=3 uid="uid://d4bjmsxdqhuhj"]
+
+[ext_resource type="Script" path="res://player_movement.gd" id="1_7y133"]
+[ext_resource type="AudioStream" uid="uid://uv1yqdwg6a26" path="res://Project files/FX/step/Step.ogg" id="2_dkojv"]
+[ext_resource type="AudioStream" uid="uid://bty2jgwqdkbcv" path="res://Project files/FX/step/Step2.ogg" id="3_ob5nk"]
+[ext_resource type="AudioStream" uid="uid://b62afn7038qt4" path="res://Project files/FX/step/Step3.ogg" id="4_3vpsu"]
+[ext_resource type="AudioStream" uid="uid://cs5b0obvwotwq" path="res://Project files/FX/step/Step4.ogg" id="5_fhytn"]
+[ext_resource type="AudioStream" uid="uid://b27j1fvp3likp" path="res://Project files/FX/step/Step5.ogg" id="6_hknht"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_8p4nf"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_l20et"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_mwneg"]
+height = 1.039
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_ht343"]
+streams_count = 5
+random_pitch = 1.0
+stream_0/stream = ExtResource("2_dkojv")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("3_ob5nk")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("4_3vpsu")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("5_fhytn")
+stream_3/weight = 1.0
+stream_4/stream = ExtResource("6_hknht")
+stream_4/weight = 1.0
+
+[node name="Player" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.63186, 0)
+script = ExtResource("1_7y133")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+cast_shadow = 0
+mesh = SubResource("CapsuleMesh_8p4nf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_l20et")
+
+[node name="Foot" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.514769, 0)
+visible = false
+shape = SubResource("CapsuleShape3D_mwneg")
+
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.857317, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Head"]
+fov = 64.2
+
+[node name="FloorDetect" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.433906, 0)
+
+[node name="Footstep" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(3.3806e-05, 0.999975, 0.00712084, 0.00474718, -0.00712092, 0.999963, 0.999989, -8.44031e-10, -0.0047473, 0, -0.999266, 0)
+stream = SubResource("AudioStreamRandomizer_ht343")
+unit_size = 3.05
+max_distance = 20.0
+max_polyphony = 2
+bus = &"Footsteps"
+emission_angle_enabled = true
+emission_angle_degrees = 65.7
+emission_angle_filter_attenuation_db = -11.5
+doppler_tracking = 2

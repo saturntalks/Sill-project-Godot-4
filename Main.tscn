@@ -1,0 +1,146 @@
+[gd_scene load_steps=6 format=3 uid="uid://c0eid1v4rlkja"]
+
+[ext_resource type="PackedScene" uid="uid://d4bjmsxdqhuhj" path="res://player.tscn" id="1_sud8m"]
+[ext_resource type="AudioStream" uid="uid://bpvfhti85g4g0" path="res://Project files/FX/ambient fx/ambient fx 3.mp3" id="2_a7k43"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ignm4"]
+sky_top_color = Color(0.301961, 0.454902, 0.658824, 1)
+sky_horizon_color = Color(0.811765, 0.619608, 0.290196, 1)
+sky_energy_multiplier = 0.5
+sun_angle_max = 318.04
+
+[sub_resource type="Sky" id="Sky_30mtp"]
+sky_material = SubResource("ProceduralSkyMaterial_ignm4")
+
+[sub_resource type="Environment" id="Environment_t2phi"]
+background_mode = 2
+sky = SubResource("Sky_30mtp")
+ambient_light_source = 3
+ambient_light_color = Color(0.411765, 0.501961, 0.698039, 1)
+reflected_light_source = 2
+tonemap_mode = 3
+tonemap_white = 4.25
+ssao_enabled = true
+ssao_radius = 3.17
+ssao_intensity = 1.28
+ssil_enabled = true
+sdfgi_enabled = true
+sdfgi_read_sky_light = false
+sdfgi_cascades = 6
+sdfgi_energy = 1.231
+glow_enabled = true
+glow_normalized = true
+glow_intensity = 2.97
+glow_strength = 1.37
+glow_bloom = 0.17
+fog_density = 0.0044
+volumetric_fog_density = 0.067
+volumetric_fog_anisotropy = 0.9
+adjustment_contrast = 0.95
+
+[node name="World" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_t2phi")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." groups=["Floor"]]
+transform = Transform3D(15.5199, 0, 0, 0, 8.05787, 0, 0, 0, 8.05787, 0, 0, 0)
+gi_mode = 2
+use_collision = true
+size = Vector3(1.52986, 1, 3.72434)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="."]
+transform = Transform3D(15.5199, 0, 0, 0, 8.05787, 0, 0, 0, 8.05787, 0, 37.5063, 22.7225)
+gi_mode = 2
+use_collision = true
+size = Vector3(1.52986, 1, 3.72434)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="."]
+transform = Transform3D(15.5199, 0, 0, 0, 8.05787, 0, 0, 0, 8.05787, 0, 37.5063, -1.002)
+gi_mode = 2
+use_collision = true
+size = Vector3(1.52986, 1, 0.73896)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="."]
+transform = Transform3D(15.5199, 0, 0, 0, 8.05787, 0, 0, 0, 8.05787, 0, 37.5063, -10.0749)
+gi_mode = 2
+use_collision = true
+size = Vector3(1.52986, 1, 0.73896)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="."]
+transform = Transform3D(15.5199, 0, 0, 0, 8.05787, 0, 0, 0, 8.05787, 13.2478, 14.6165, -0.0146751)
+gi_mode = 2
+use_collision = true
+size = Vector3(0.136874, 5.08131, 3.72434)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="."]
+transform = Transform3D(15.5199, 0, 0, 0, 8.05787, 0, 0, 0, 8.05787, -12.6488, 14.6165, 0)
+use_collision = true
+size = Vector3(0.136874, 5.08131, 3.72434)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="."]
+transform = Transform3D(-6.78397e-07, 0, -8.05787, 0, 8.05787, 0, 15.5199, 0, -3.52221e-07, -0.512638, 14.6165, -14.4908)
+gi_mode = 2
+use_collision = true
+size = Vector3(0.136874, 5.08131, 3.72434)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="."]
+transform = Transform3D(-6.78397e-07, 0, -8.05787, 0, 8.05787, 0, 15.5199, 0, -3.52221e-07, -0.512638, 14.6165, 14.4553)
+gi_mode = 2
+use_collision = true
+size = Vector3(0.136874, 5.08131, 3.72434)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(7.72872, 0, 2.27953, 0, 8.05787, 0, -2.27953, 0, 7.72872, 6.86881, 5.89609, -0.00645256)
+gi_mode = 2
+use_collision = true
+size = Vector3(0.34296, 0.693548, 0.773249)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="."]
+transform = Transform3D(9.56331, 1.71176, 2.86695, -1.17804, 9.86758, -1.96203, -3.12438, 1.51894, 9.51512, 6.86881, 4.93984, 9.21847)
+gi_mode = 2
+use_collision = true
+size = Vector3(0.34296, 0.693548, 0.773249)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(5.35478, 0, 6.02127, 0, 8.05787, 0, -6.02127, 0, 5.35478, 6.8365, 2.27683, -8.71032)
+gi_mode = 2
+use_collision = true
+size = Vector3(0.34296, 0.693548, 0.773249)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.21477, 5.81172, 3.57267)
+light_energy = 4.006
+light_indirect_energy = 15.409
+shadow_enabled = true
+omni_range = 8.679
+omni_attenuation = 1.86607
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.65727, 5.81172, -2.55088)
+light_color = Color(0.709804, 0.490196, 0.352941, 1)
+light_energy = 1.775
+light_indirect_energy = 100.0
+shadow_enabled = true
+omni_range = 8.679
+omni_attenuation = 1.86607
+
+[node name="Player" parent="." instance=ExtResource("1_sud8m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.3328, 6.67705, 0)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(0.520339, -3.73278e-08, 0.85396, -0.85396, -2.27447e-08, 0.520339, 0, -1, -4.37114e-08, 0, 20.6322, 0)
+light_color = Color(0.392157, 0.690196, 0.85098, 1)
+light_energy = 0.449
+light_indirect_energy = 13.994
+light_specular = 6.246
+shadow_enabled = true
+spot_range = 22.8657
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.61102, 0)
+stream = ExtResource("2_a7k43")
+attenuation_model = 3
+volume_db = -8.985
+autoplay = true
+max_distance = 3778.68

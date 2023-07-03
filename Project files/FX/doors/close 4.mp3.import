@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://1mtxdaum2iux"
+path="res://.godot/imported/close 4.mp3-ed12637d7e2c9b62d844dc79b8144688.mp3str"
+
+[deps]
+
+source_file="res://Project files/FX/doors/close 4.mp3"
+dest_files=["res://.godot/imported/close 4.mp3-ed12637d7e2c9b62d844dc79b8144688.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

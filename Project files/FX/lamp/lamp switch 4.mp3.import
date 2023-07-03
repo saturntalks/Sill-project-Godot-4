@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://yxe0j3cn1omp"
+path="res://.godot/imported/lamp switch 4.mp3-f7a856ec5ad10049cd0bf2ab3ceb0cb7.mp3str"
+
+[deps]
+
+source_file="res://Project files/FX/lamp/lamp switch 4.mp3"
+dest_files=["res://.godot/imported/lamp switch 4.mp3-f7a856ec5ad10049cd0bf2ab3ceb0cb7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

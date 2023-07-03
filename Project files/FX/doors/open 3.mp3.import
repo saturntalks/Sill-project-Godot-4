@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://csshklso4dewg"
+path="res://.godot/imported/open 3.mp3-3fa90ecb32f266b486b8075f504bd439.mp3str"
+
+[deps]
+
+source_file="res://Project files/FX/doors/open 3.mp3"
+dest_files=["res://.godot/imported/open 3.mp3-3fa90ecb32f266b486b8075f504bd439.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

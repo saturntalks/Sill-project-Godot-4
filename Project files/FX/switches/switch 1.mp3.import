@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://df84kclvgho8i"
+path="res://.godot/imported/switch 1.mp3-90781ef12d593afe060064302dc08967.mp3str"
+
+[deps]
+
+source_file="res://Project files/FX/switches/switch 1.mp3"
+dest_files=["res://.godot/imported/switch 1.mp3-90781ef12d593afe060064302dc08967.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

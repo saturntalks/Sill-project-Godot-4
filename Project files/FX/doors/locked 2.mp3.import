@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cdnjh0kx4krda"
+path="res://.godot/imported/locked 2.mp3-79f6b1af43a7dbcfdef6e5fc7934e412.mp3str"
+
+[deps]
+
+source_file="res://Project files/FX/doors/locked 2.mp3"
+dest_files=["res://.godot/imported/locked 2.mp3-79f6b1af43a7dbcfdef6e5fc7934e412.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
